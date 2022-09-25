@@ -41,6 +41,11 @@ The leaderboard has high variance for many reasons, but also because your rank i
 
 At one point I tried to find Shrek by collected games where the winner isnt me and doesnt look like sample submissions. Then I tried to find a common strategy of some sort. Couldn't find strategy, i guess annonymous players are effective. In fact its probably for the best that players are annonymous, otherwise we can analyse each other (this is boring), and make bots that explicitly counter other bots.
 
+I unintentionally did all my work on this at unearthly hours. This turned out to be good, because other players aren't changing their bots at the same time (controlled environment). I guess all nighters aren't so bad after all :')
+
+> Editor’s note: a Very advanced strat is to fake losing a challenge by discarding your
+This seems very aggressive, would this actually work?
+
 Timeout if we predict we are going to lose, so the game ends up in a tie. :)))))))
 
 
@@ -51,6 +56,7 @@ The points with bolded bullet points are things that seem to work well and are i
  - an order for discarding cards and a seperate order for revealing cards (trying combinations that seems to make sense). avoid getting double of the same card
  * order of actions are killing (assassin, couop), exchanging if start of game and "bad" hand, gaining $$$ (duke, ambassador, captain, income)
  * take foreign aid instead of income if no dukes and midgame
+ * endgame is when only 1 opponent, or at most 3 remaining cards
  - only assassinate when >=4 coins (this means that you are slightly passive, in the hope that other people kill each other)
  * extended idea to make a stealth bot (startgame: as little impact as possible, try to get assassin then duke. endgame: kill, gain $$)
  - try to lie in certain cases, and dont challenge opponents who counter your lies (lying ambassador op)
@@ -63,4 +69,10 @@ The points with bolded bullet points are things that seem to work well and are i
  - fake duke/captain (which one is better) to gain tempo
  - kill players who i am likely to get away with - maybe they havent countered the last time it was actioned to them
 
+## Ideas I wanted to try
+ - system to calculate probabilities of each possible hand for player, given their decisions (but data seems too small and messy because lying)
+ - additionally, using ambassador to update probabilities and 
+ - making an engine, but cbbs
+ - forfeit a turn using an ambassador, but this is an still unnecessarily risky option
+ - ... TODO
  
